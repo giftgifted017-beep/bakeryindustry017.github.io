@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uwezo Cup Cakes Company Limited</title>
+
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #fff8f5;
+        }
+
+        header {
+            background: #d35400;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-style: italic;
+        }
+
+        nav {
+            background: #a84300;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #e67e22;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d35400;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Home Section ===== */
+        .home {
+            text-align: center;
+        }
+
+        .home p {
+            font-size: 1.1rem;
+        }
+
+        /* ===== Products ===== */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-card h3 {
+            color: #e67e22;
+        }
+
+        /* ===== Gallery ===== */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery div {
+            background: #f5cba7;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        /* ===== FAQs ===== */
+        .faq {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            background: #f39c12;
+            color: #fff;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid #f39c12;
+        }
+
+        /* ===== Contact ===== */
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #a84300;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Uwezo Cup Cakes Company Limited</h1>
+    <p>"Small Cake, Big Smile"</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#faqs">FAQs</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<!-- Home -->
+<section id="home" class="home">
+    <h2>Welcome to Uwezo Cup Cakes</h2>
+    <p>
+        We are passionate bakers dedicated to creating delicious cakes that bring joy to every occasion.
+        From small daily treats to grand celebration cakes, we bake with love and quality.
+    </p>
+</section>
+
+<!-- About Us -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Uwezo Cup Cakes Company Limited specializes in baking, distributing, and selling a wide range of cakes.
+        We proudly serve individuals, families, schools, events, and businesses with fresh, affordable,
+        and beautifully crafted cakes for all occasions.
+    </p>
+</section>
+
+<!-- Products -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <h3>Small Cakes</h3>
+            <p>Perfect for daily treats and quick smiles.</p>
+        </div>
+        <div class="product-card">
+            <h3>Birthday Cakes</h3>
+            <p>Custom designs to make every birthday special.</p>
+        </div>
+        <div class="product-card">
+            <h3>Wedding Cakes</h3>
+            <p>Elegant and delicious cakes for your big day.</p>
+        </div>
+        <div class="product-card">
+            <h3>Graduation Cakes</h3>
+            <p>Celebrate success with a sweet reward.</p>
+        </div>
+        <div class="product-card">
+            <h3>Packaged Sweet Cakes</h3>
+            <p>Safe and tasty treats for children and everyone.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div>Cake Image</div>
+        <div>Cake Image</div>
+        <div>Cake Image</div>
+        <div>Cake Image</div>
+        <div>Cake Image</div>
+        <div>Cake Image</div>
+    </div>
+</section>
+
+<!-- FAQs -->
+<section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+        <div class="faq-item">
+            <div class="faq-question">Do you accept custom cake orders?</div>
+            <div class="faq-answer">Yes, we accept custom designs for all occasions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How early should I place my order?</div>
+            <div class="faq-answer">We recommend placing orders at least 2–3 days in advance.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer delivery services?</div>
+            <div class="faq-answer">Yes, we distribute and deliver within selected areas.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@uwezocupcakes.co.tz</p>
+    <p>Phone: +255 XXX XXX XXX</p>
+    <p>Location: Tanzania</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Uwezo Cup Cakes Company Limited. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // FAQ Toggle Script
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(q => {
+        q.addEventListener("click", () => {
+            const answer = q.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

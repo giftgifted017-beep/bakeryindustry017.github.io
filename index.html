@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uwezo Cup Cakes Company Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <img src="images/logo.png" alt="Uwezo Cup Cakes Logo" class="logo">
+
+        <h1>Uwezo Cup Cakes Company Limited</h1>
+        <p class="slogan">Small Cake, Big Smile</p>
+
+        <a href="#order" class="btn-primary">Order a Cake</a>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        We bake, distribute, and sell cakes for all occasions — from small cakes
+        to wedding and graduation cakes.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Uwezo Cup Cakes Company Limited delivers affordable, delicious, and
+        beautifully designed cakes for everyone.
+    </p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product-card">Small Cakes</div>
+        <div class="product-card">Birthday Cakes</div>
+        <div class="product-card">Wedding Cakes</div>
+        <div class="product-card">Graduation Cakes</div>
+        <div class="product-card">Packaged Sweet Cakes</div>
+    </div>
+</section>
+
+<!-- IMAGE SLIDER -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="slider">
+        <img src="images/cake1.jpg" class="slide active">
+        <img src="images/cake2.jpg" class="slide">
+        <img src="images/cake3.jpg" class="slide">
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<!-- ONLINE ORDER FORM -->
+<section id="order">
+    <h2>Online Cake Order</h2>
+    <form id="orderForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Cake Type</option>
+            <option>Birthday Cake</option>
+            <option>Wedding Cake</option>
+            <option>Graduation Cake</option>
+            <option>Small Cake</option>
+        </select>
+
+        <select required>
+            <option value="">Select Cake Size</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+
+        <select required>
+            <option value="">Select Flavor</option>
+            <option>Vanilla</option>
+            <option>Chocolate</option>
+            <option>Strawberry</option>
+            <option>Red Velvet</option>
+        </select>
+
+        <textarea placeholder="Message on Cake (Optional)"></textarea>
+
+        <button type="submit">Place Order via WhatsApp</button>
+    </form>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +255 XXX XXX XXX</p>
+    <p>📧 info@uwezocupcakes.co.tz</p>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps?q=Tanzania&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Uwezo Cup Cakes Company Limited</p>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/255782505154"
+   class="whatsapp-button"
+   target="_blank">
+   <i class="fab fa-whatsapp"></i> Order Now
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
