@@ -1,4 +1,3 @@
-/* ===== Image Slider ===== */
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
@@ -17,24 +16,31 @@ document.querySelector(".prev").onclick = () => {
     showSlide(index);
 };
 
-// Auto slide
 setInterval(() => {
     index = (index + 1) % slides.length;
     showSlide(index);
 }, 5000);
 
-/* ===== Order Form → WhatsApp ===== */
 document.getElementById("orderForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const values = [...this.elements]
-        .filter(el => el.value)
-        .map(el => el.value)
-        .join(" | ");
+    const formData = new FormData(this);
+    const orderDetails = [];
 
-    const message = encodeURIComponent(
-        "Hello Uwezo Cup Cakes, I would like to place an order:\n" + values
+    orderDetails.push(`Name: ${formData.get("name")}`);
+    orderDetails.push(`Phone: ${formData.get("phone")}`);
+    orderDetails.push(`Cake Type: ${formData.get("cakeType")}`);
+    orderDetails.push(`Size: ${formData.get("cakeSize")}`);
+    orderDetails.push(`Flavor: ${formData.get("flavor")}`);
+
+    const message = formData.get("message");
+    if (message) {
+        orderDetails.push(`Message: ${message}`);
+    }
+
+    const whatsappMessage = encodeURIComponent(
+        "Hello Uwezo Cup Cakes, I would like to place an order:\n\n" + orderDetails.join("\n")
     );
 
-    window.open(`https://wa.me/255782505154?text=${message}`, "_blank");
+    window.open(`https://wa.me/255782505154?text=${whatsappMessage}`, "_blank");
 });
